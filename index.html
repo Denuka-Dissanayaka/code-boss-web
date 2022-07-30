@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Boss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onscroll="scroll()">
+    <div class="san-menu-container">
+        <p>X</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <section class="header-container container">
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">code<span>boss</span></div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="san-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-section">
+                <div class="header-text">Websites you're <br /><span>not afraid</span> to share</div>
+                <p>Website solutions for all your needs</p>
+                <p class="btn">find out more</p>
+            </div>
+
+        </section>
+    </header>
+
+    <section class="services" id="service">
+        <h2>services</h2>
+        <div class="container ser-container">
+            <div class="service">
+                <div><img src="./images/service-1.jpg" alt=""></div>
+                <div class="ser-text-container">
+                    <h3>Websites</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit, dolor hic necessitatibus quos
+                        aperiam fugit corrupti libero saepe natus. Dolores obcaecati eius eos rem nulla iste aliquid
+                        provident quis.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div><img src="./images/service-2.jpg" alt=""></div>
+                <div class="ser-text-container">
+                    <h3>Apps</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit, dolor hic necessitatibus quos
+                        aperiam fugit corrupti libero saepe natus. Dolores obcaecati eius eos rem nulla iste aliquid
+                        provident quis.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div><img src="./images/service-3.jpg" alt=""></div>
+                <div class="ser-text-container">
+                    <h3>Games</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit, dolor hic necessitatibus quos
+                        aperiam fugit corrupti libero saepe natus. Dolores obcaecati eius eos rem nulla iste aliquid
+                        provident quis.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div><img src="./images/service-4.jpg" alt=""></div>
+                <div class="ser-text-container">
+                    <h3>Mentorings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit, dolor hic necessitatibus quos
+                        aperiam fugit corrupti libero saepe natus. Dolores obcaecati eius eos rem nulla iste aliquid
+                        provident quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>projects</h2>
+        <div class="container pro-container">
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+            <div class="project">
+                <img src="./images/project-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>contact</h2>
+        <div class="container con-container">
+            <form action="" method="post">
+                <label for="name"></label>
+                <input type="text" name="name" id="" placeholder="Name">
+                <label for="email"></label>
+                <input type="email" name="email" id="" placeholder="Email">
+                <label for="message"></label>
+                <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                <input type="submit" value="SEND MESSAGE" class="send">
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container foot-container">
+            denuka dissanayake
+        </div>
+    </footer>
+
+
+    <script>
+        function scroll() {
+            const nav = document.querySelector('nav');
+            let y = window.scrollY;
+            if (y > 0) {
+                nav.classList.add('scroll');
+            } else {
+                nav.classList.remove('scroll');
+            }
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
